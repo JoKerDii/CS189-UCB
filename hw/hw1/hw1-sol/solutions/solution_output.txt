@@ -1,0 +1,49 @@
+loaded spam
+test_data (5857, 32)
+training_data (5172, 32)
+training_labels (5172, 1)
+loaded cifar10
+test_data (10000, 3072)
+training_data (50000, 3072)
+training_labels (50000, 1)
+loaded mnist
+test_data (10000, 784)
+training_data (60000, 784)
+training_labels (60000, 1)
+(4138, 32) (1034, 32) 0.2
+train_size 100 train accuracy 0.91 val accuracy 0.775628626692
+train_size 200 train accuracy 0.845 val accuracy 0.794003868472
+train_size 500 train accuracy 0.82 val accuracy 0.801740812379
+train_size 1000 train accuracy 0.805 val accuracy 0.805609284333
+train_size 4138 train accuracy 0.799661672305 val accuracy 0.808510638298
+(45000, 3072) (5000, 3072) 5000
+train_size 100 train accuracy 1.0 val accuracy 0.2476
+train_size 200 train accuracy 1.0 val accuracy 0.248
+train_size 500 train accuracy 1.0 val accuracy 0.275
+train_size 1000 train accuracy 1.0 val accuracy 0.2932
+train_size 5000 train accuracy 1.0 val accuracy 0.3096
+(50000, 784) (10000, 784) 10000
+train_size 100 train accuracy 1.0 val accuracy 0.7224
+train_size 200 train accuracy 1.0 val accuracy 0.7975
+train_size 500 train accuracy 1.0 val accuracy 0.8603
+train_size 1000 train accuracy 1.0 val accuracy 0.8775
+train_size 5000 train accuracy 1.0 val accuracy 0.8991
+train_size 10000 train accuracy 1.0 val accuracy 0.9088
+C 1e-08 accuracy 0.8826
+C 1e-07 accuracy 0.9165
+C 1e-06 accuracy 0.9217
+C 1e-05 accuracy 0.9107
+C 0.0001 accuracy 0.9047
+C 0.001 accuracy 0.9048
+C 0.01 accuracy 0.9048
+C 0.1 accuracy 0.9048
+mnist_C 1e-06
+C 1e-06 mean val accuracy:  0.709983719558
+C 1e-05 mean val accuracy:  0.709983719558
+C 0.0001 mean val accuracy:  0.717716929419
+C 0.001 mean val accuracy:  0.75097533289
+C 0.01 mean val accuracy:  0.778624078624
+C 0.1 mean val accuracy:  0.795058736548
+C 1.0 mean val accuracy:  0.801437234416
+C 10.0 mean val accuracy:  0.803759064397
+spam_C 10.0

@@ -44,12 +44,8 @@ train_label_df = pd.DataFrame(data = train_label, columns = Mcolname)
 num_of_rows = int(train_label_df.shape[0] * 1/6)
 train_label_df.sample(frac = 1)
 
-X_train,y_train = train_label_df.loc[num_of_rows+1:,
-                                     [str(i) for i in np.arange(mTraining.shape[1])]],
-                                     train_label_df.loc[num_of_rows+1:,'784']
-X_val,y_val = train_label_df.loc[:num_of_rows,
-                                 [str(i) for i in np.arange(mTraining.shape[1])]],
-                                 train_label_df.loc[:num_of_rows,'784']
+X_train,y_train = train_label_df.loc[num_of_rows+1:,[str(i) for i in np.arange(mTraining.shape[1])]],train_label_df.loc[num_of_rows+1:,'784']
+X_val,y_val = train_label_df.loc[:num_of_rows,[str(i) for i in np.arange(mTraining.shape[1])]],train_label_df.loc[:num_of_rows,'784']
 
 ## SVM, training samples are 100,200,500,1000,2000,5000,10000
 import numpy as np
@@ -110,11 +106,12 @@ For C = 0.001,0.01,0.1,1,10, the accuracy is 0.83168,0.88092,0.8794,
 """
 ## build model with 10000 samples and predict test data
 train_label_df.sample(frac = 1)
-X_train,y_train = train_label_df.loc[num_of_rows+1:,
-                                     [str(i) for i in np.arange(mTraining.shape[1])]], 
+X_train,y_train = train_label_df.loc[num_of_rows+1:,\
+                                     [str(i) for i in np.arange(mTraining.shape[1])]], \
                                      train_label_df.loc[num_of_rows+1:,'784']
-X_val,y_val = train_label_df.loc[:num_of_rows,
-                                 [str(i) for i in np.arange(mTraining.shape[1])]],
+                                     
+X_val,y_val = train_label_df.loc[:num_of_rows,\
+                                 [str(i) for i in np.arange(mTraining.shape[1])]],\
                                  train_label_df.loc[:num_of_rows,'784']
 
 svm_clf=Pipeline((
