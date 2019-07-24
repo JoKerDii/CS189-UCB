@@ -54,7 +54,6 @@ if sys.version_info[0] < 3:
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from sklearn import svm
 from scipy import io
 import random
 
