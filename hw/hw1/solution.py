@@ -18,7 +18,7 @@ def predict_kaggle(name, training_data, training_labels, test_data, C=1.0):
     f.close()
 
 
-class HomeworkOneSolution(object):
+class funtionMayNeed(object):
 
     def __init__(self, dataset_name, val_size, seed=1):
         self.dataset_name = dataset_name
@@ -172,9 +172,9 @@ class HomeworkOneSolution(object):
 
 def execute():
     # See HomeworkOneSolution.split for solution to problem 2.
-    hw1_spam = HomeworkOneSolution("spam", val_size=0.2)
-    hw1_cifar10 = HomeworkOneSolution("cifar10", val_size=5000)
-    hw1_mnist = HomeworkOneSolution("mnist", val_size=10000)
+    hw1_spam = funtionMayNeed("spam", val_size=0.2)
+    hw1_cifar10 = funtionMayNeed("cifar10", val_size=5000)
+    hw1_mnist = funtionMayNeed("mnist", val_size=10000)
 
     # Output solution to problem 3.
     hw1_spam.svm_experiment([100, 200, 500, 1000, 5000])
